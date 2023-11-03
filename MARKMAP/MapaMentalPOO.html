@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.3/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.3/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+          const markmap = getMarkmap();
+          window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+        })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"PROGRAMACIÓN EN JAVA","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"Origen: Desarrollado por Sun Microsystems en 1995 en 1995, dirigido para electrodomesticos inteligentes, ahora propiedad de Oracle Corporation","children":[]},{"type":"heading","depth":1,"payload":{"lines":[2,3]},"content":"Caracteristicas Principales: Orientado a objetos, portable, robusto , seguro y de lato rendimiento.","children":[]},{"type":"heading","depth":1,"payload":{"lines":[3,4]},"content":"Entorno de desarrollo (IDE): herramientas que funcionan como uns istema que permite programar de una manera más sencilla. Por ejemplo:","children":[{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"Eclipse","children":[]},{"type":"heading","depth":2,"payload":{"lines":[5,6]},"content":"Intellij","children":[]},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"NetBeans","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[7,8]},"content":"Estructura de un Programa Java: Es la forma en que el codigo esta organizado y estructurado","children":[{"type":"heading","depth":2,"payload":{"lines":[8,9]},"content":"Clases y Objetos: nos indica que todo es un objeto","children":[]},{"type":"heading","depth":2,"payload":{"lines":[9,10]},"content":"Métodos: Funciones que definen el comportamiento de los objetos","children":[]},{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"Variables y Tipos de datos: cada variable se declara en un tipo especifico","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[11,12]},"content":"Principios Basicos: Los 4 pilares representan la base de ideas más avanzadas, son los siguientes:","children":[{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"1. Abstraccion","children":[]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"2. Encapsulamiento","children":[]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"3. Polimorfismo","children":[]},{"type":"heading","depth":2,"payload":{"lines":[15,16]},"content":"4. Herencia","children":[]}]}]},{})</script>
+</body>
+</html>
